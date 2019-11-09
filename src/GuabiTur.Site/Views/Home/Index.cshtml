@@ -1,1 +1,6 @@
-﻿Olá!
+﻿@using GuabiTur.Site.Data
+@inject IPedidoRepository PedidoRepository
+
+    Olá
+
+    @PedidoRepository.ObterPedido().Id
